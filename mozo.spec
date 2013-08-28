@@ -39,9 +39,6 @@ NOCONFIGURE=1 ./autogen.sh
 %install
 %makeinstall_std
 
-find %{buildroot} -name '*.la' -exec rm -rf {} ';'
-find %{buildroot} -name '*.a' -exec rm -rf {} ';'
-
 %find_lang %oname --all-name
 
 
