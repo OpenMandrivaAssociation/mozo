@@ -4,7 +4,7 @@
 Summary:       Simple menu editor for MATE
 Name:          mozo
 Version:       1.6.0
-Release:       1
+Release:       2
 Group:         System/Configuration/Other
 License:       LGPLv2+
 Url:           http://mate-desktop.org
@@ -20,7 +20,7 @@ BuildRequires: pkgconfig(pygtk-2.0)
 Requires:	pygtk2.0 >= 2.8.0
 Requires:	python-mate-menus >= 1.6.0
 
-Provides:      %{oname} = %{version}-%{release}
+%rename %{oname}
 
 %description
 Mozo is a menu editor for MATE that lets you get things done,
