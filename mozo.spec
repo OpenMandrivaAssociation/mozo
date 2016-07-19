@@ -3,8 +3,8 @@
 
 Summary:	Simple menu editor for MATE
 Name:		mozo
-Version:	1.8.0
-Release:	2
+Version:	1.14.0
+Release:	1
 Group:		System/Configuration/Other
 License:	LGPLv2+
 Url:		http://mate-desktop.org
@@ -29,7 +29,7 @@ Just click and type to edit, add, and delete any menu entry.
 NOCONFIGURE=1 ./autogen.sh
 
 %build
-%configure2_5x
+%configure2_5x --with-gtk=3.0
 %make
 
 %install
@@ -39,7 +39,7 @@ NOCONFIGURE=1 ./autogen.sh
 
 %files -f %{name}.lang
 %doc README AUTHORS COPYING
-%{py_puresitedir}/*
+%{py2_puresitedir}/*
 %{_bindir}/*
 %{_datadir}/applications/*
 %{_datadir}/mozo
