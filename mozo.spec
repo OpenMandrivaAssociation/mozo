@@ -13,8 +13,8 @@ BuildArch:	noarch
 BuildRequires:	intltool
 BuildRequires:	mate-common
 BuildRequires:	pkgconfig(libmate-menu)
-BuildRequires:	pkgconfig(pygtk-2.0)
-Requires:	pygtk2.0 >= 2.8.0
+BuildRequires:	pkgconfig(pygobject-3.0)
+Requires:	typelib(Gtk)
 Requires:	python-mate-menus >= 1.6.0
 %rename %{oname}
 
