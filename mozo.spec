@@ -4,7 +4,7 @@
 Summary:	Simple menu editor for MATE
 Name:		mozo
 Version:	1.18.0
-Release:	1
+Release:	2
 Group:		System/Configuration/Other
 License:	LGPLv2+
 Url:		https://mate-desktop.org
@@ -13,7 +13,7 @@ BuildArch:	noarch
 
 BuildRequires:  desktop-file-utils
 BuildRequires:	intltool
-BuildRequires:	itstool 
+BuildRequires:	itstool
 BuildRequires:	mate-common
 BuildRequires:	pkgconfig(libmate-menu)
 BuildRequires:	pkgconfig(pygobject-3.0)
@@ -58,4 +58,3 @@ Mozo is a menu editor for MATE using the freedesktop.org menu specification.
 
 # locales
 %find_lang %{name} --with-gnome --all-name
-
