@@ -3,8 +3,8 @@
 
 Summary:	Simple menu editor for MATE
 Name:		mozo
-Version:	1.18.0
-Release:	2
+Version:	1.20.0
+Release:	1
 Group:		System/Configuration/Other
 License:	LGPLv2+
 Url:		https://mate-desktop.org
