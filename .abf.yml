@@ -1,5 +1,6 @@
 removed_sources:
   mozo-1.14.0.tar.xz: 0aa2058136d3c36419d06be102f64b43dde38db4
   mozo-1.18.0.tar.xz: b490e8be26e0ec49ff4f89aa0113c8a80c80c080
-sources:
   mozo-1.20.0.tar.xz: bd03a195abd0641e15437160ffecf6a6a42b0420
+sources:
+  mozo-1.20.2.tar.xz: e64040d30cf553953eefec88e54cae900f6485b8
