@@ -34,6 +34,7 @@ Mozo is a menu editor for MATE using the freedesktop.org menu specification.
 
 %files -f %{name}.lang
 %doc README AUTHORS COPYING
+%{py_puresitedir}/*
 %{_bindir}/*
 %{_datadir}/applications/*
 %dir %{_datadir}/mozo
