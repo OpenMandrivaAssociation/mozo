@@ -16,10 +16,8 @@ BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	mate-common
 BuildRequires:	pkgconfig(libmate-menu)
-BuildRequires:	pkgconfig(pygobject-3.0)
 
 Requires:	typelib(Gtk)
-Requires:	python2-mate-menus >= %{url_ver}
 
 %rename %{oname}
 
@@ -35,7 +33,6 @@ Mozo is a menu editor for MATE using the freedesktop.org menu specification.
 
 %files -f %{name}.lang
 %doc README AUTHORS COPYING
-%{py2_puresitedir}/*
 %{_bindir}/*
 %{_datadir}/applications/*
 %dir %{_datadir}/mozo
