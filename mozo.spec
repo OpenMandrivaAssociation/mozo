@@ -16,6 +16,7 @@ BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	mate-common
 BuildRequires:	pkgconfig(libmate-menu)
+BuildRequires:	pkgconfig(pygobject-3.0)
 
 Requires:	typelib(Gtk)
 
