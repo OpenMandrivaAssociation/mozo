@@ -3,7 +3,7 @@
 
 Summary:	Simple menu editor for MATE
 Name:		mozo
-Version:	1.22.1
+Version:	1.22.2
 Release:	1
 Group:		System/Configuration/Other
 License:	LGPLv2+
