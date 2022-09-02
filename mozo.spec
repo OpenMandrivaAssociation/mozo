@@ -4,7 +4,7 @@
 Summary:	Simple menu editor for MATE
 Name:		mozo
 Version:	1.26.1
-Release:	3
+Release:	4
 Group:		System/Configuration/Other
 License:	LGPLv2+
 Url:		https://mate-desktop.org
@@ -41,13 +41,12 @@ Mozo is a menu editor for MATE using the freedesktop.org menu specification.
 %dir %{_datadir}/mozo
 %{_datadir}/mozo/*
 %{_iconsdir}/hicolor/*/*/*
-%{_mandir}/man1/mozo.1*
+%doc %{_mandir}/man1/mozo.1*
 
 #---------------------------------------------------------------------------
 
 %prep
-%setup -q
-%autopatch -p1
+%autosetup -p1
 
 %build
 #NOCONFIGURE=1 ./autogen.sh
