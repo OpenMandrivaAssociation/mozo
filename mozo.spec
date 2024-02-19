@@ -1,18 +1,17 @@
-%define url_ver %(echo %{version}|cut -d. -f1,2)
-%define oname	mate-menu-editor
+%define mate_ver	%(echo %{version}|cut -d. -f1,2)
 
 Summary:	Simple menu editor for MATE
 Name:		mozo
-Version:	1.26.2
+Version:	1.28.0
 Release:	1
 Group:		System/Configuration/Other
 License:	LGPLv2+
 Url:		https://mate-desktop.org
-Source0:	https://pub.mate-desktop.org/releases/%{url_ver}/%{name}-%{version}.tar.xz
+Source0:	https://pub.mate-desktop.org/releases/%{mate_ver}/%{name}-%{version}.tar.xz
 BuildArch:	noarch
 
 BuildRequires:	autoconf-archive
-BuildRequires:  desktop-file-utils
+BuildRequires:	desktop-file-utils
 BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	mate-common
@@ -21,7 +20,7 @@ BuildRequires:	pkgconfig(pygobject-3.0)
 
 Requires:	typelib(Gtk)
 
-%rename %{oname}
+%rename mate-menu-editor
 
 %description
 The MATE Desktop Environment is the continuation of GNOME 2. It provides an
