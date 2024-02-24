@@ -1,5 +1,7 @@
 %define mate_ver	%(echo %{version}|cut -d. -f1,2)
 
+%define oname mate-menu-editor
+
 Summary:	Simple menu editor for MATE
 Name:		mozo
 Version:	1.28.0
@@ -20,7 +22,7 @@ BuildRequires:	pkgconfig(pygobject-3.0)
 
 Requires:	typelib(Gtk)
 
-%rename mate-menu-editor
+%rename		%{oname}
 
 %description
 The MATE Desktop Environment is the continuation of GNOME 2. It provides an
