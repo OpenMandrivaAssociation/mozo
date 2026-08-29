@@ -12,6 +12,7 @@ Url:		https://mate-desktop.org
 Source0:	https://pub.mate-desktop.org/releases/%{mate_ver}/%{name}-%{version}.tar.xz
 BuildArch:	noarch
 
+BuildRequires:  gettext
 BuildRequires:	automake
 BuildRequires:	libtool-base
 BuildRequires:	slibtool
