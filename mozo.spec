@@ -56,7 +56,13 @@ Mozo is a menu editor for MATE using the freedesktop.org menu specification.
 
 %build
 #NOCONFIGURE=1 ./autogen.sh
-%configure
+# (Angry P) Out of tree build, so we need to call ./configure directly. Additionally, force Clang.
+# this fixing: make[1]: *** No rule to make target '/config.status', needed by 'Makefile'.  Stop.
+export CC=clang
+export CXX=clang++
+./configure \
+    --prefix=%{_prefix} \
+    --libdir=%{_libdir} \
 %make_build
 
 %install
