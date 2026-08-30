@@ -62,7 +62,7 @@ export CC=clang
 export CXX=clang++
 ./configure \
     --prefix=%{_prefix} \
-    --libdir=%{_libdir} \
+    --libdir=%{_libdir}
 %make_build
 
 %install
